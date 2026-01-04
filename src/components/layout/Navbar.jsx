@@ -7,6 +7,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/menu', label: 'Menu' },
   { href: '/about', label: 'Our Story' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/branches', label: 'Locations' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -49,7 +50,7 @@ export default function Navbar() {
             </div>
             <span
               className={cn(
-                'font-serif font-bold text-2xl tracking-tight transition-colors',
+                'font-serif font-bold text-2xl transition-colors',
                 isTransparent ? 'text-white drop-shadow-md' : 'text-primary'
               )}
             >
@@ -84,11 +85,11 @@ export default function Navbar() {
               );
             })}
 
-            <Link to="/menu">
+            {/* <Link to="/menu">
               <button className="bg-secondary text-primary-foreground px-6 py-2 rounded-full font-bold text-sm uppercase hover:bg-primary hover:text-white transition-all shadow-lg">
                 Order Online
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Toggle */}
