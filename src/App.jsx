@@ -7,12 +7,13 @@ import Branches from './pages/Branches';
 import Menu from './pages/Menu';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Routes>
         {/* The Layout wraps all these child routes */}
         <Route element={<AppLayout />}>
