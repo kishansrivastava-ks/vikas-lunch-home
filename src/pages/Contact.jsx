@@ -1,6 +1,30 @@
 import { motion } from 'framer-motion';
 import { SectionHeader } from '@/components/SectionHeader';
 
+const LOCATIONS = [
+  {
+    id: 1,
+    city: 'Busstand Karkala ( Veg Only )',
+    name: 'Vikas Lunch Home',
+    address: '6X7X+4GF, SH 37, Hirgana, Karkala, Karnataka 574104',
+    phone: '(+91) 9538 364118',
+  },
+  {
+    id: 2,
+    city: 'AC Road Karkala',
+    name: 'Vikas Lunch Home',
+    address: 'AC Road Karkala, Karnataka',
+    phone: '(+91) 97393 17535',
+  },
+  {
+    id: 3,
+    city: 'Moodbidri',
+    name: 'Vikas Lunch Home',
+    address: 'Moodbidri, Karnataka',
+    phone: '(+91) 95383 64118',
+  },
+];
+
 export default function Contact() {
   return (
     <div className="pt-24 pb-16 min-h-screen bg-background">
@@ -12,17 +36,17 @@ export default function Contact() {
           {[
             {
               title: 'Call Us',
-              value: '+91 98765 43210',
+              value: '+91 95383 64118',
               sub: 'Mon – Sun, 10:00 AM – 11:00 PM',
             },
             {
               title: 'Email',
-              value: 'contact@yourrestaurant.com',
+              value: 'vikasrdk@gmail.com',
               sub: 'We reply within 24 hours',
             },
             {
               title: 'Visit Us',
-              value: 'Jaipur, Rajasthan',
+              value: 'Karkala, Karnataka',
               sub: 'Multiple locations across the city',
             },
           ].map((item, i) => (
@@ -42,29 +66,23 @@ export default function Contact() {
         {/* Locations + Form */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-24">
           {/* Locations */}
+          {/* Locations */}
           <div>
             <h3 className="text-2xl font-serif font-bold text-primary mb-6">Our Locations</h3>
 
             <div className="space-y-6">
-              {[
-                {
-                  name: 'C-Scheme Branch',
-                  address: '123, MI Road, C-Scheme, Jaipur',
-                  phone: '+91 98765 43210',
-                },
-                {
-                  name: 'Vaishali Nagar Branch',
-                  address: '45, Vaishali Nagar, Jaipur',
-                  phone: '+91 91234 56789',
-                },
-              ].map((loc, i) => (
+              {LOCATIONS.map((loc) => (
                 <div
-                  key={i}
+                  key={loc.id}
                   className="rounded-xl border border-border p-6 hover:bg-primary/5 transition"
                 >
                   <h4 className="font-bold text-lg text-foreground">{loc.name}</h4>
-                  <p className="text-sm text-muted-foreground mt-1">{loc.address}</p>
-                  <p className="text-sm font-semibold text-secondary mt-2">{loc.phone}</p>
+
+                  <p className="text-sm font-semibold text-secondary mt-1">{loc.city}</p>
+
+                  <p className="text-sm text-muted-foreground mt-2">{loc.address}</p>
+
+                  <p className="text-sm font-semibold text-primary mt-3">{loc.phone}</p>
                 </div>
               ))}
             </div>
@@ -73,7 +91,7 @@ export default function Contact() {
             <div className="mt-8 overflow-hidden rounded-2xl border border-border">
               <iframe
                 title="map"
-                src="https://www.google.com/maps?q=Jaipur%20Rajasthan&output=embed"
+                src="https://www.google.com/maps?q=Karkala%20Karnataka&output=embed"
                 className="w-full h-72 border-0"
                 loading="lazy"
               />

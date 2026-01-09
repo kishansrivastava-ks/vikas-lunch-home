@@ -6,31 +6,29 @@ import { SectionHeader } from '../components/SectionHeader';
 const LOCATIONS = [
   {
     id: 1,
-    city: 'New York',
-    name: 'Midtown Spice Garden',
-    address: '123 Lexington Ave, New York, NY 10016',
-    phone: '(212) 555-0199',
-    hours: '11:00 AM - 10:00 PM',
-    image:
-      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop',
+    city: 'Busstand Karkala ( Veg Only )',
+    name: 'Vikas Lunch Home',
+    address: '6X7X+4GF, SH 37, Hirgana, Karkala, Karnataka 574104',
+    phone: '(+91) 9538 364118',
+    hours: '07:00 AM - 07:00 PM',
+    image: '/images/shop1.webp',
   },
   {
     id: 2,
-    city: 'San Francisco',
-    name: 'Mission Curry House',
-    address: '789 Valencia St, San Francisco, CA 94110',
-    phone: '(415) 555-0123',
-    hours: '11:30 AM - 10:30 PM',
-    image:
-      'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop',
+    city: 'AC Road Karkala',
+    name: 'Vikas Lunch Home',
+    address: 'AC Road Karkala, Karnataka',
+    phone: '(+91) 97393 17535',
+    hours: '11:00 AM - 03:00 PM | 06:00 PM - 09:30 PM',
+    image: '/images/shop2.webp',
   },
   {
     id: 3,
-    city: 'Chicago',
-    name: 'Windy City Tandoor',
-    address: '456 N Clark St, Chicago, IL 60654',
-    phone: '(312) 555-0155',
-    hours: '12:00 PM - 10:00 PM',
+    city: 'Moodbidri',
+    name: 'Vikas Lunch Home',
+    address: 'Moodbidri, Karnataka',
+    phone: '(+91) 95383 64118',
+    hours: '11:00 AM - 03:00 PM | 06:00 PM - 10:00 PM',
     image:
       'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop',
   },
@@ -83,12 +81,14 @@ export default function Branches() {
                   <Button className="flex-1 bg-primary hover:bg-primary/90 text-white font-bold">
                     Get Directions
                   </Button>
-                  <Button
-                    variant="outline"
-                    className="flex-1 border-primary text-primary hover:bg-primary/5 font-bold"
-                  >
-                    Call Now
-                  </Button>
+                  <a href={`tel:${loc.phone.replace(/[^\d+]/g, '')}`} className="flex-1">
+                    <Button
+                      variant="outline"
+                      className="w-full border-primary text-primary hover:bg-primary/5 font-bold"
+                    >
+                      Call Now
+                    </Button>
+                  </a>
                 </div>
               </div>
             </motion.div>

@@ -1,6 +1,18 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from 'lucide-react';
 
+const OPENING_HOURS = [
+  { day: 'Sunday', time: 'Closed', closed: true },
+  { day: 'Monday', time: '11:30 AM - 3:30 PM' },
+  { day: 'Tuesday', time: '11:30 AM - 3:30 PM' },
+  { day: 'Wednesday', time: '11:30 AM - 3:30 PM' },
+  { day: 'Thursday', time: '11:30 AM - 3:30 PM' },
+  { day: 'Friday', time: '11:30 AM - 3:30 PM' },
+  { day: 'Saturday', time: '11:30 AM - 3:30 PM' },
+];
+
+const todayIndex = new Date().getDay(); // 0 = Sunday
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground pt-16 pb-8">
@@ -74,18 +86,18 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
                 <span>
-                  123 Spice Garden Road,
+                  Near Attur Church, Attur Church Road,
                   <br />
-                  Culinary District, NY 10001
+                  Salmar, Karkala-574104, Karnataka
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary shrink-0" />
-                <span>(555) 123-4567</span>
+                <span>+91 95383 64118</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary shrink-0" />
-                <span>hello@vikaslunchhome.com</span>
+                <span>vikasrdk@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -93,19 +105,28 @@ export default function Footer() {
           {/* Opening Hours */}
           <div>
             <h4 className="text-xl font-serif font-semibold mb-6 text-secondary">Opening Hours</h4>
+
             <ul className="space-y-2 text-primary-foreground/90">
-              <li className="flex justify-between">
-                <span>Mon - Thu</span>
-                <span>11:00 AM - 10:00 PM</span>
-              </li>
-              <li className="flex justify-between font-semibold text-secondary">
-                <span>Fri - Sat</span>
-                <span>11:00 AM - 11:00 PM</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Sunday</span>
-                <span>12:00 PM - 10:00 PM</span>
-              </li>
+              {OPENING_HOURS.map((item, index) => {
+                const isToday = index === todayIndex;
+
+                return (
+                  <li
+                    key={item.day}
+                    className={`flex justify-between px-3 py-1 rounded-md transition-colors
+            ${isToday ? 'bg-secondary/20 font-semibold text-secondary' : ''}`}
+                  >
+                    <span>
+                      {item.day}
+                      {isToday && ' (Today)'}
+                    </span>
+
+                    <span className={item.closed ? 'text-red-400 font-semibold' : ''}>
+                      {item.time}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

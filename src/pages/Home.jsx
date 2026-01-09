@@ -12,7 +12,8 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           {/* unsplash: indian food banquet table spread dark moody lighting */}
           <img
-            src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=2000&auto=format&fit=crop"
+            // src="https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=2000&auto=format&fit=crop"
+            src="/images/home-hero.webp"
             alt="Indian Feast"
             className="w-full h-full object-cover"
           />
@@ -29,9 +30,10 @@ export default function Home() {
             <span className="text-secondary font-bold tracking-[0.2em] uppercase text-sm md:text-base mb-4 block">
               Welcome to Vikas Lunch Home
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight">
-              Taste the <span className="text-secondary italic">Soul</span> of India
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-snug">
+              Taste the <span className="text-secondary italic">Soul</span> of Karavali - Tulunadu
             </h1>
+
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
               Experience authentic flavors, traditional recipes, and a warm atmosphere that brings
               the vibrant culture of India to your plate.
@@ -42,9 +44,9 @@ export default function Home() {
                   View Menu
                 </button>
               </Link>
-              <Link href="/contact">
+              <Link to="/contact">
                 <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto">
-                  Book a Table
+                  Contact
                 </button>
               </Link>
             </div>
@@ -68,7 +70,7 @@ export default function Home() {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-primary rounded-br-3xl z-0" />
               {/* unsplash: indian chef cooking spices */}
               <img
-                src="/images/chef-cooking.png"
+                src="/images/home-about.png"
                 alt="Chef Cooking"
                 className="rounded-2xl shadow-2xl relative z-10 w-full h-[500px] object-cover"
               />
@@ -118,22 +120,19 @@ export default function Home() {
                 title: 'Butter Chicken',
                 desc: 'Tender chicken cooked in a rich, creamy tomato gravy with fenugreek.',
                 price: '$18',
-                image:
-                  'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=800&auto=format&fit=crop', // unsplash: butter chicken
+                image: '/images/dish1.png',
               },
               {
                 title: 'Lamb Rogan Josh',
                 desc: 'Aromatic lamb curry with Kashmiri spices, yogurt, and saffron.',
                 price: '$22',
-                image:
-                  'https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=800&auto=format&fit=crop', // unsplash: lamb curry
+                image: '/images/dish2.png',
               },
               {
                 title: 'Paneer Tikka Masala',
                 desc: 'Grilled cottage cheese cubes in a spicy, onion-tomato gravy.',
                 price: '$16',
-                image:
-                  'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?q=80&w=800&auto=format&fit=crop', // unsplash: paneer tikka
+                image: '/images/dish3.png',
               },
             ].map((dish, i) => (
               <motion.div
@@ -151,9 +150,9 @@ export default function Home() {
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-bold text-primary shadow-lg">
+                  {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-bold text-primary shadow-lg">
                     {dish.price}
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
                   {dish.title}

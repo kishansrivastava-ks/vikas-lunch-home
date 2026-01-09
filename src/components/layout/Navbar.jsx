@@ -8,7 +8,7 @@ const links = [
   { href: '/menu', label: 'Menu' },
   { href: '/about', label: 'Our Story' },
   { href: '/gallery', label: 'Gallery' },
-  { href: '/branches', label: 'Locations' },
+  { href: '/branches', label: 'Branches' },
   { href: '/contact', label: 'Contact' },
 ];
 
