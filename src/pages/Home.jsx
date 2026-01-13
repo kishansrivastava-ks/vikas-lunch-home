@@ -38,14 +38,26 @@ export default function Home() {
               Experience authentic flavors, traditional recipes, and a warm atmosphere that brings
               the vibrant culture of India to your plate.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/menu">
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to="/menu">
                 <button className="px-8 py-4 bg-primary text-white rounded-full font-bold text-lg hover:bg-secondary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-secondary/20 w-full sm:w-auto">
                   View Menu
                 </button>
               </Link>
               <Link to="/contact">
                 <button className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto">
+                  Contact
+                </button>
+              </Link>
+            </div> */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+              <Link to="/menu" className="w-full sm:w-auto">
+                <button className="px-8 py-3 sm:py-4 bg-primary text-white rounded-full font-bold text-lg hover:bg-secondary hover:text-primary-foreground transition-all duration-300 shadow-lg hover:shadow-secondary/20 w-full sm:w-auto">
+                  View Menu
+                </button>
+              </Link>
+              <Link to="/contact" className="w-full sm:w-auto">
+                <button className="px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 w-full sm:w-auto">
                   Contact
                 </button>
               </Link>
@@ -163,7 +175,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/menu">
+            <Link to="/menu">
               <button className="border-2 border-primary text-primary px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-white transition-all duration-300 uppercase tracking-widest text-sm">
                 View Full Menu
               </button>
