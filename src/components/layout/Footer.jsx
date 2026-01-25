@@ -23,7 +23,7 @@ export default function Footer() {
             <h3 className="text-3xl font-serif font-bold text-secondary">Vikas Lunch Home</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
               Experience the authentic flavors of India. Crafted with passion, served with love. A
-              culinary journey through the spices of the East.
+              culinary journey through the spices of Coastal Karnataka.
             </p>
             <div className="flex space-x-4 pt-2">
               <a

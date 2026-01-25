@@ -166,10 +166,10 @@ export default function Home() {
                     {dish.price}
                   </div> */}
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                {/* <h3 className="text-2xl font-serif font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
                   {dish.title}
-                </h3>
-                <p className="text-muted-foreground">{dish.desc}</p>
+                </h3> */}
+                {/* <p className="text-muted-foreground">{dish.desc}</p> */}
               </motion.div>
             ))}
           </div>
