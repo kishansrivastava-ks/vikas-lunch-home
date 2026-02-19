@@ -120,9 +120,9 @@ export default function Gallery() {
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end">
-                <p className="text-white text-sm font-semibold p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                {/* <p className="text-white text-sm font-semibold p-4 opacity-0 group-hover:opacity-100 transition-opacity">
                   {img.title}
-                </p>
+                </p> */}
               </div>
             </motion.div>
           ))}

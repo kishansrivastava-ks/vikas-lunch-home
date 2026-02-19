@@ -2,19 +2,19 @@ import { motion } from 'framer-motion';
 import { SectionHeader } from '@/components/SectionHeader';
 
 const LOCATIONS = [
-  {
-    id: 1,
-    city: 'Busstand Karkala ( Veg Only )',
-    name: 'Vikas Lunch Home',
-    address: '6X7X+4GF, SH 37, Hirgana, Karkala, Karnataka 574104',
-    phone: '(+91) 9538 364118',
-  },
+  // {
+  //   id: 1,
+  //   city: 'Busstand Karkala ( Veg Only )',
+  //   name: 'Vikas Lunch Home',
+  //   address: '6X7X+4GF, SH 37, Hirgana, Karkala, Karnataka 574104',
+  //   phone: '(+91) 9538 364118',
+  // },
   {
     id: 2,
     city: 'AC Road Karkala',
     name: 'Vikas Lunch Home',
     address: 'AC Road Karkala, Karnataka',
-    phone: '(+91) 97393 17535',
+    phone: '(+91) 78921 38077',
   },
   {
     id: 3,

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from 'lucide-react';
 
 const OPENING_HOURS = [
-  { day: 'Sunday', time: 'Closed', closed: true },
+  { day: 'Sunday', time: '11:30 AM - 3:30 PM | 06:30 PM - 10:00 PM', closed: false },
   { day: 'Monday', time: '11:30 AM - 3:30 PM' },
   { day: 'Tuesday', time: '11:30 AM - 3:30 PM' },
   { day: 'Wednesday', time: '11:30 AM - 3:30 PM' },
@@ -22,8 +22,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-3xl font-serif font-bold text-secondary">Vikas Lunch Home</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Experience the authentic flavors of India. Crafted with passion, served with love. A
-              culinary journey through the spices of Coastal Karnataka.
+              Experience the authentic flavors of Tulunadu. Crafted with passion, served with love.
+              A culinary journey through the spices of Coastal Karnataka.
             </p>
             <div className="flex space-x-4 pt-2">
               <a

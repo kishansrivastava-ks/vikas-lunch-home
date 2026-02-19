@@ -4,23 +4,23 @@ import { Button } from '../components/common/Button';
 import { SectionHeader } from '../components/SectionHeader';
 
 const LOCATIONS = [
-  {
-    id: 1,
-    city: 'Busstand Karkala ( Veg Only )',
-    name: 'Vikas Lunch Home',
-    address: '6X7X+4GF, SH 37, Hirgana, Karkala, Karnataka 574104',
-    phone: '(+91) 9538 364118',
-    hours: '07:00 AM - 07:00 PM',
-    image: '/images/shop1.webp',
-  },
+  // {
+  //   id: 1,
+  //   city: 'Busstand Karkala ( Veg Only )',
+  //   name: 'Vikas Lunch Home',
+  //   address: '6X7X+4GF, SH 37, Hirgana, Karkala, Karnataka 574104',
+  //   phone: '(+91) 9538 364118',
+  //   hours: '07:00 AM - 07:00 PM',
+  //   image: '/images/shop1.webp',
+  // },
   {
     id: 2,
     city: 'AC Road Karkala',
     name: 'Vikas Lunch Home',
     address: 'AC Road Karkala, Karnataka',
-    phone: '(+91) 97393 17535',
+    phone: '(+91) 78921 38077',
     hours: '11:00 AM - 03:00 PM | 06:00 PM - 09:30 PM',
-    image: '/images/shop2.webp',
+    image: '/images/shop1.webp',
   },
   {
     id: 3,
@@ -29,8 +29,7 @@ const LOCATIONS = [
     address: 'Moodbidri, Karnataka',
     phone: '(+91) 95383 64118',
     hours: '11:00 AM - 03:00 PM | 06:00 PM - 10:00 PM',
-    image:
-      'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop',
+    image: '/images/shop3.webp',
   },
 ];
 
@@ -40,7 +39,7 @@ export default function Branches() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader title="Our Locations" subtitle="Find Us Near You" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {LOCATIONS.map((loc, i) => (
             <motion.div
               key={loc.id}

@@ -105,7 +105,7 @@ export default function About() {
             >
               {/* unsplash: restaurant interior elegant dining */}
               <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop"
+                src="/images/glimpse/glimpse1.jpeg"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 alt="Interior"
               />
@@ -117,7 +117,7 @@ export default function About() {
             >
               {/* unsplash: naan bread tandoor */}
               <img
-                src="https://images.unsplash.com/photo-1626074353765-517a681e40be?q=80&w=600&auto=format&fit=crop"
+                src="/images/glimpse/glimpse2.webp"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 alt="Naan"
               />
@@ -128,7 +128,7 @@ export default function About() {
             >
               {/* unsplash: indian dessert gulab jamun */}
               <img
-                src="https://images.unsplash.com/photo-1589119908995-c6837fa14848?q=80&w=600&auto=format&fit=crop"
+                src="/images/glimpse/glimpse3.jpeg"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 alt="Dessert"
               />

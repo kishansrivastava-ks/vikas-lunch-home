@@ -17,7 +17,8 @@ export default function Home() {
             alt="Indian Feast"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" />
+          <div className="absolute inset-0" />
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/30" /> */}
         </div>
 
         {/* Hero Content */}
@@ -36,7 +37,7 @@ export default function Home() {
 
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
               Experience authentic flavors, traditional recipes, and a warm atmosphere that brings
-              the vibrant culture of India to your plate.
+              the vibrant culture of Coastal Karnataka to your plate.
             </p>
             {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/menu">
@@ -196,13 +197,13 @@ export default function Home() {
             className="mb-16"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              {
-                icon: Star,
-                title: 'Master Chefs',
-                desc: "Decades of culinary excellence from India's finest kitchens.",
-              },
+              // {
+              //   icon: Star,
+              //   title: 'Master Chefs',
+              //   desc: "Decades of culinary excellence from India's finest kitchens.",
+              // },
               {
                 icon: Clock,
                 title: 'Fast Service',
